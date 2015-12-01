@@ -116,4 +116,3 @@ Visual Studio plugin to enable development for Xamarin.Android.
 Xamarin.iOS   9.2.1.51 (3c0ec35)
 Visual Studio extension to enable development for Xamarin.iOS.
 ```
-- test
