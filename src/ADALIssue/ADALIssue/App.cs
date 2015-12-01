@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
-
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
 
 namespace ADALIssue
@@ -30,6 +31,18 @@ namespace ADALIssue
         protected override void OnStart()
         {
             // Handle when your app starts
+
+            try
+            {
+                AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/expediacorp.onmicrosoft.com");
+                var tokens = authContext.TokenCache.ReadItems().ToArray();
+                Debug.WriteLine("Tokens read");
+            }
+            catch (Exception exc)
+            {
+                Debug.WriteLine(exc.ToString());
+                throw exc;
+            }
         }
 
         protected override void OnSleep()

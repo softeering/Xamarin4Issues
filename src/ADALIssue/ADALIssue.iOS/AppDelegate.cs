@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 using Foundation;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using UIKit;
 
 namespace ADALIssue.iOS
@@ -24,7 +26,7 @@ namespace ADALIssue.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            
             return base.FinishedLaunching(app, options);
         }
     }
