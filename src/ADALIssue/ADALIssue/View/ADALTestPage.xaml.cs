@@ -12,7 +12,7 @@ namespace ADALIssue.View
 	{
 		public const string Authority = "https://login.windows.net/expediacorp.onmicrosoft.com";
 		public const string ResourceId = "https://expedientmobile-dev.azurewebsites.net";
-		public const string ClientId = "";
+		public const string ClientId = "You can ask for our client if needed";
 		public const string RedirectUrl = "https://expedientmobile-dev.azurewebsites.net/login/done";
 
 		public ADALTestPage()
