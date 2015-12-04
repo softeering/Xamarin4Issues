@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XamCompileIssue.ViewModel
+namespace XamlCompileIssue.ViewModel
 {
 	public class CustomControlViewModel : INotifyPropertyChanged
 	{

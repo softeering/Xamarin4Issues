@@ -1,4 +1,8 @@
 # Xamarin4Issues
+##Xaml Compilation
+
+##ADAL library
+
 ##Version info
 ###Visual Studio
 ```

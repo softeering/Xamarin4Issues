@@ -96,8 +96,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamCompileIssue\XamCompileIssue.csproj">
-      <Name>XamCompileIssue</Name>
+    <ProjectReference Include="..\XamCompileIssue\XamlCompileIssue.csproj">
+      <Name>XamlCompileIssue</Name>
       <Project>{850F2B55-AE7B-49D5-ACC7-15D39AAFA2E5}</Project>
     </ProjectReference>
   </ItemGroup>

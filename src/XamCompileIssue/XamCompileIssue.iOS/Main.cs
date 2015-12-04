@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace XamCompileIssue.iOS
+namespace XamlCompileIssue.iOS
 {
     public class Application
     {

@@ -7,9 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADALIssue", "ADALIssue\ADAL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADALIssue.iOS", "ADALIssue\ADALIssue.iOS\ADALIssue.iOS.csproj", "{5B5E9018-E48D-4150-B264-AB1E75E2CCEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCompileIssue.iOS", "XamCompileIssue\XamCompileIssue.iOS\XamCompileIssue.iOS.csproj", "{9EC81A23-8D47-42DF-A50E-C4304AEE197D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlCompileIssue.iOS", "XamCompileIssue\XamCompileIssue.iOS\XamlCompileIssue.iOS.csproj", "{9EC81A23-8D47-42DF-A50E-C4304AEE197D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCompileIssue", "XamCompileIssue\XamCompileIssue\XamCompileIssue.csproj", "{850F2B55-AE7B-49D5-ACC7-15D39AAFA2E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlCompileIssue", "XamCompileIssue\XamCompileIssue\XamlCompileIssue.csproj", "{850F2B55-AE7B-49D5-ACC7-15D39AAFA2E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D4660B8-3092-4360-8C68-E85931169680}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

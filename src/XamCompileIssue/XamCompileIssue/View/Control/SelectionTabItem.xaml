@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlCompileIssue.View.Control.SelectionTabItem">
+
+	<View.Resources>
+		<ResourceDictionary>
+			<Style x:Key="TabWrapperStyle" TargetType="StackLayout">
+				<Setter Property="HeightRequest" Value="48"></Setter>
+				<Setter Property="Padding" Value="5"></Setter>
+				<Setter Property="Spacing" Value="0"></Setter>
+			</Style>
+			<Style x:Key="TabIconStyle" TargetType="Image">
+				<Setter Property="HorizontalOptions" Value="End"></Setter>
+				<Setter Property="HeightRequest" Value="25"></Setter>
+			</Style>
+			<Style x:Key="TabTitleStyle" TargetType="Label">
+				<Setter Property="FontSize" Value="10"></Setter>
+				<Setter Property="HeightRequest" Value="25"></Setter>
+				<Setter Property="VerticalTextAlignment" Value="End"></Setter>
+			</Style>
+
+			<Color x:Key="TabSelectedColor">#d6d6d6</Color>
+			<Color x:Key="TabNotSelectedColor">#f5f5f5</Color>
+		</ResourceDictionary>
+	</View.Resources>
+
+	<StackLayout Style="{StaticResource TabWrapperStyle}">
+		<StackLayout.GestureRecognizers>
+			<TapGestureRecognizer x:Name="uxTapGesture"></TapGestureRecognizer>
+		</StackLayout.GestureRecognizers>
+		<Image x:Name="uxIcon" Style="{StaticResource TabIconStyle}" />
+		<Label x:Name="uxTitle" Style="{StaticResource TabTitleStyle}" />
+	</StackLayout>
+</ContentView>

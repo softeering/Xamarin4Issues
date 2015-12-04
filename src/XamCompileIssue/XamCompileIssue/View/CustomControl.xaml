@@ -1,6 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamCompileIssue.View.CustomControl">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+			 xmlns:control="clr-namespace:XamlCompileIssue.View.Control;assembly=XamCompileIssue"
+             x:Class="XamlCompileIssue.View.CustomControl">
+	<Page.Resources>
+		<ResourceDictionary>
+			<x:Array x:Key="SelectionTabs" Type="{x:Type control:SelectionTabItem}">
+				<control:SelectionTabItem Icon="Icon-Notification-All.png" Title="ALL" IsSelected="True" />
+				<control:SelectionTabItem Icon="Icon-Notification-Case.png" Title="CASES" Value="Case" />
+				<control:SelectionTabItem Icon="Icon-Notification-Task.png" Title="ACTIVITIES" Value="Task" />
+				<control:SelectionTabItem Icon="Icon-Notification-Mail.png" Title="AUTO-EMAIL" Value="Mail" />
+			</x:Array>
+		</ResourceDictionary>
+	</Page.Resources>
+
+	<StackLayout>
+
+		<!-- DOES NOT WORK when XamlCompile is enabled -->
+		<control:SelectionTab>
+			<x:Array Type="{x:Type control:SelectionTabItem}">
+				<control:SelectionTabItem Icon="Icon-Notification-All.png" Title="ALL" IsSelected="True" />
+				<control:SelectionTabItem Icon="Icon-Notification-Case.png" Title="CASES" Value="Case" />
+				<control:SelectionTabItem Icon="Icon-Notification-Task.png" Title="ACTIVITIES" Value="Task" />
+				<control:SelectionTabItem Icon="Icon-Notification-Mail.png" Title="AUTO-EMAIL" Value="Mail" />
+			</x:Array>
+		</control:SelectionTab>
+
+		<!-- WORKS when XamlCompile is enabled -->
+		<!--<control:SelectionTab Items="{StaticResource SelectionTabs}"/>-->
+
+	</StackLayout>
 </ContentPage>

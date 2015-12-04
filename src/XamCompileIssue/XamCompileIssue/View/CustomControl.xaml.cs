@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using XamCompileIssue.ViewModel;
+using XamlCompileIssue.ViewModel;
 
-namespace XamCompileIssue.View
+namespace XamlCompileIssue.View
 {
 	public partial class CustomControl : ContentPage
 	{
